@@ -17,4 +17,14 @@
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
   </div>
+  <ion-input label="Numero 1" placeholder="Ingrese Primer Número" [(ngModel)]="entrada.numero1"></ion-input>
+  <ion-input label="Numero 2" placeholder="Ingrese Segundo Número" [(ngModel)]="entrada.numero2"></ion-input>
+
+  <ion-button expand="full" (click)="doSumar()">Sumar</ion-button>
+
+  <ion-card>
+    <ion-card-content>
+      {{mensaje}}
+    </ion-card-content>
+  </ion-card>
 </ion-content>
